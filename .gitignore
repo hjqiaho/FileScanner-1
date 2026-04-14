@@ -7,3 +7,4 @@
 .externalNativeBuild
 /.idea/*
 !.idea/codeStyleSettings.xml
+.kotlin/sessions/kotlin-compiler-17564264627209681532.salive

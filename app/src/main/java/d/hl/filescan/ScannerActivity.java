@@ -27,6 +27,8 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
+import d.hl.filescanner.R;
+
 public class ScannerActivity extends AppCompatActivity implements View.OnClickListener {
 
   private TextView mTVINfo;
@@ -70,12 +72,12 @@ public class ScannerActivity extends AppCompatActivity implements View.OnClickLi
   @Override
   public void onClick(View view) {
     switch (view.getId()) {
-      case R.id.tv_start:
-        startScan();
-        break;
-      case R.id.tv_stop:
-        if (mFileScanner != null) mFileScanner.stopScan();
-        break;
+//      case R.id.tv_start:
+//        startScan();
+//        break;
+//      case R.id.tv_stop:
+//        if (mFileScanner != null) mFileScanner.stopScan();
+//        break;
     }
   }
 

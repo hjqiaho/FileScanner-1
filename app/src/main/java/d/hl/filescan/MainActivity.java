@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import d.hl.filescanner.R;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 
