@@ -72,7 +72,7 @@ void setThreadAttachCallback(Scanner *scanner, void (*attach)(Scanner *scanner),
 }
 
 
-static void *threadScan(Scanner *scanner);
+static void *threadScan(void *arg);
 
 static void checkFileExt(Scanner *scanner, const char *dir, const char *fileName, int isNoMediaPath);
 
@@ -327,7 +327,9 @@ int startScan(Scanner *scanner) {
 }
 
 //thread run
-static void *threadScan(Scanner *scanner) {
+static void *threadScan(void *arg) {
+    Scanner *scanner = (Scanner *) arg;
+
     if (scanner->attachJVMThreadCallback) scanner->attachJVMThreadCallback(scanner);
 
     while (1) {
